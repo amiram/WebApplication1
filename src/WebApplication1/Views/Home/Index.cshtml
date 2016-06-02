@@ -1,0 +1,14 @@
+﻿<my-app></my-app>
+@section Scripts {
+    <script>
+        System.config({
+            packages: {
+                'app': { defaultExtension: 'js' },
+                'lib': { defaultExtension: 'js' },
+            },
+        });
+
+        System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+}
